@@ -14,4 +14,3 @@ fun calculaIdade(anoNascimento: Int): Int {
     val idade = anoAtual - anoNascimento
     return idade
 }
-
