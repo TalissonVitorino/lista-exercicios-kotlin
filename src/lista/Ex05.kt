@@ -21,9 +21,15 @@ fun main() {
     val precoUnitario = readln().toDouble()
     println("digite a quantidade ")
     val quantidadeAdquirida = readln().toDouble()
+    val precoFinal = calculaValorFinal(precoUnitario, quantidadeAdquirida)
+
+    println("Descricao: $descricao")
+    println("Valor total final é: $precoFinal")
+}
+
+fun calculaValorFinal(precoUnitario: Double, quantidadeAdquirida: Double): Double {
 
     val valorTotal = quantidadeAdquirida * precoUnitario
-
     val percDesconto: Double = when {
         quantidadeAdquirida <= 5 -> 2.0
         quantidadeAdquirida <= 10 -> 3.0
@@ -32,9 +38,6 @@ fun main() {
 
     val valorDesconto = valorTotal * percDesconto / 100
     val valorTotalFinal = valorTotal - valorDesconto
-    println("Descricao: $descricao")
-    println("Valor total final é: $valorTotalFinal")
 
-
+    return valorTotalFinal
 }
-
