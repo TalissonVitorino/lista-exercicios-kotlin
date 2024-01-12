@@ -2,7 +2,6 @@ package lista
 
 fun main() {
 
-
     print("Digite um número: ")
     val numero = readln().toInt()
 

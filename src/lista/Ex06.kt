@@ -31,6 +31,6 @@ fun main() {
         idadeAtual >= 60 && tempoIngresso >= 25 -> println("requer aposentadoria")
         else -> println("Não requerer aposentadoria")
     }
-
+    // TODO: refatorar para função.
 
 }

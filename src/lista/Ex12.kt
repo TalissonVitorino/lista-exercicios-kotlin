@@ -4,7 +4,6 @@ fun main() {
 
     val totalNumeros = 10
     var negativoConte = 0
-
     println("Digite $totalNumeros números:")
 
     for (i in 1..totalNumeros) {
