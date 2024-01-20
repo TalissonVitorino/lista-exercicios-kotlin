@@ -9,10 +9,10 @@ fun main() {
     for (i in 1..totalNumeros) {
         print("Número $i: ")
         val numero = readLine()!!.toDouble()
-
         if (numero < 0) {
             negativoConte++
         }
     }
+
     println("Quantidade de números negativos: $negativoConte")
 }
